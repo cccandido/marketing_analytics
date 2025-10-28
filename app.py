@@ -20,7 +20,7 @@ CAMINHO_CSV = "view_base_marketing_analytics.csv"
 
 @st.cache_data
 def carregar_dados():
-    df = pd.read_csv(CAMINHO_CSV, sep=",", encoding="utf-8")
+    df = pd.read_csv(CAMINHO_CSV, sep=";", encoding="utf-8")
     return df
 
 
@@ -329,4 +329,5 @@ with aba3:
 # ============================================================
 st.markdown("<hr>", unsafe_allow_html=True)
 st.caption("Desenvolvido por Camila Candido · Dados simulados para fins de estudo · © 2025")
+
 
